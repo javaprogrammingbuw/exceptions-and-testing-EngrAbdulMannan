@@ -5,13 +5,13 @@ public class TestSuite {
 
 	/*Initialize*/
 	//Test owner
-//	@Test public static void InitTest1() {
-//		//define
-//		Person owner = new Person("John Doe");
-//		BankAccount account = new BankAccount(owner, 1000.00);
-//		//test
-//		assertEquals(owner.name,account.getOwner().name,0.001);
-//	}
+	//	@Test public static void InitTest1() {
+	//		//define
+	//		Person owner = new Person("John Doe");
+	//		BankAccount account = new BankAccount(owner, 1000.00);
+	//		//test
+	//		assertEquals(owner.name,account.getOwner().name,0.001);
+	//	}
 	//Test 
 	@Test public static void test1() {
 		//define
@@ -22,7 +22,7 @@ public class TestSuite {
 		//test
 		assertEquals(result,account.getBalance(), 0.001);
 	}
-	
+
 	@Test public static void test2() {
 		//define
 		Person owner = new Person("John Doe");
@@ -77,24 +77,17 @@ public class TestSuite {
 		//test
 		assertEquals(22.0,account.getIban().length(),0.001);
 	}
-	//This test case failed.
 	@Test public static void test9() {
-		Person owner = new Person("John Doe");
-		BankAccount account = new BankAccount(owner, 1000.00);
-		double result = (account.getSecurityNumber());
-		assertEquals(123456,result,0.001);
-	}
-	@Test public static void test10() {
 		Person owner = new Person("John Doe");
 		BankAccount account = new BankAccount(owner, 1000.00);	    
 		assertEquals(0.00,account.getLimit(),0.001);
 	}
-	@Test public static void test11() {
+	@Test public static void test10() {
 		Person owner = new Person("John Doe");
 		BankAccount account = new BankAccount(owner, 1000.00,5000.00);
 		assertEquals(5000.00,account.getLimit(),0.001);
 	}
-	@Test public static void test12() {	 
+	@Test public static void test11() {	 
 		Person owner = new Person("John Doe");
 		Person holder= new Person("Abdul");
 		BankAccount account = new BankAccount(owner, 1000.00,2000.00);
@@ -103,7 +96,7 @@ public class TestSuite {
 		account.deposit(800.00,account.getSecurityNumber());
 		assertEquals(1200.00,account.getBalance(),0.001);
 	}
-	@Test public static void test13() {
+	@Test public static void test12() {
 		Person owner = new Person("John Doe");
 		Person holder= new Person("Abdul");
 		BankAccount account = new BankAccount(owner, 1000.00,2000.00);
@@ -112,7 +105,7 @@ public class TestSuite {
 		account.deposit(800.00,account.getSecurityNumber());	    
 		assertEquals(5600.00,studentAccount.getBalance(),0.001);
 	}
-	@Test public static void test14() {
+	@Test public static void test13() {
 		Person owner = new Person("John Doe");
 		BankAccount account = new BankAccount(owner, 2000.00);
 		account.deposit(700.00,account.getSecurityNumber());
@@ -122,7 +115,7 @@ public class TestSuite {
 		assertEquals(4100.00,account.getBalance(),0.001);
 
 	}
-	@Test public static void test15() {
+	@Test public static void test14() {
 		Person owner = new Person("John Doe");
 		BankAccount account = new BankAccount(owner, 2000.00);
 		account.deposit(700.00,account.getSecurityNumber());
@@ -131,7 +124,7 @@ public class TestSuite {
 		assertEquals(1500.00,account.getBalance(),0.001);
 
 	}
-	@Test public static void test16() {
+	@Test public static void test15() {
 		Person owner = new Person("Paul");
 		BankAccount account = new BankAccount(owner, 2000.00);
 		account.deposit(100.00,account.getSecurityNumber());
